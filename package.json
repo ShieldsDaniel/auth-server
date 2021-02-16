@@ -1,0 +1,42 @@
+{
+  "name": "auth-server",
+  "version": "1.0.0",
+  "description": "Central auth server for handling authentication using TypeScript for any future apps I'd like to work on.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "teenytest test/lib/**/*.test.js --helper test/helper.js",
+    "dev": "nodemon src/index.js",
+    "clearDb:users": "node test/helpers/clearUsers.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ShieldsDaniel/auth-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ShieldsDaniel/auth-server/issues"
+  },
+  "teenytest": {
+    "plugins": [
+      "teenytest-promise"
+    ]
+  },
+  "homepage": "https://github.com/ShieldsDaniel/auth-server#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.2",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.10.10",
+    "nodemon": "^2.0.6"
+  }
+}
