@@ -1,4 +1,7 @@
 node_modules
 dist
 .config
+config
 .env
+.env.test
+data

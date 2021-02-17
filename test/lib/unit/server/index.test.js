@@ -12,8 +12,8 @@ module.exports = {
   },
   "Pass app object to the routes function": () => {
     const app = td.object({
-      listen: (port, cb) => {},
-      use: (cb) => {},
+      listen: (port, cb) => { },
+      use: (cb) => { },
     });
     td.when(express.app()).thenReturn(app);
     td.when();

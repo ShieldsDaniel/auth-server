@@ -1,4 +1,3 @@
-// @ts-check
 const express = require("express");
 
 /** @type { import("express-serve-static-core").Express } */

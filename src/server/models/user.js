@@ -81,9 +81,9 @@ const findOne = async (findOptions) => {
 
 /**
  * @param { Partial<User> } findOptions
- * @returns { User[] | null }
+ * @returns { Promise<User[] | null> }
  */
-const find = (findOptions) => {
+const find = async (findOptions) => {
   moduleInit();
   return User.find(findOptions);
 };

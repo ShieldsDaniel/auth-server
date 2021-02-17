@@ -33,10 +33,10 @@ module.exports = {
   "": async () => {
     const createdUser = td.object({
       _id: mockUser._id,
-      save: () => {},
-      toObject: () => {},
+      save: () => { },
+      toObject: () => { },
     });
-    const createdRefreshToken = td.object({ save: () => {} });
+    const createdRefreshToken = td.object({ save: () => { } });
     td.when(createdUser.toObject()).thenReturn(mockUser);
     td.when(
       jwtWrapper.sign(mockUser, process.env.ACCESS_TOKEN_SECRET, {
@@ -57,5 +57,5 @@ module.exports = {
     result = await subject(createdUser);
     await td.verify(createdRefreshToken.save());
   },
-  afterEach: () => {},
+  afterEach: () => { },
 };

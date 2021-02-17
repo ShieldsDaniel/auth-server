@@ -1,4 +1,3 @@
-// @ts-check
 const refreshTokenModel = require("../../models/refreshToken");
 const jwt = require("../../../wrappers/jwtWrapper");
 

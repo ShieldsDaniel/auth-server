@@ -1,4 +1,3 @@
-// @ts-check
 const userModel = require("../../models/user");
 const bcrypt = require("../../../wrappers/bcryptWrapper");
 const createTokenPair = require("./createTokenPair");
