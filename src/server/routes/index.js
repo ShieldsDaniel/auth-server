@@ -5,12 +5,10 @@ const userController = require("../controllers/userController");
  * @returns { void }
  */
 const routes = (app) => {
-  app.get("/", (req, res) => {
-    res.send({ "hello": "there" });
-  });
   app.post("/user/register", userController.registerNewUser);
   app.post("/user/login", userController.loginUser);
   app.post("/user/token", userController.getNewAccessToken);
+  app.post("/user/check-token", userController.checkTokenValidity);
 };
 
 module.exports = routes;

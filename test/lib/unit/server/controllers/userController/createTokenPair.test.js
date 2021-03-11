@@ -30,7 +30,7 @@ module.exports = {
     mockRefreshToken = "slkdjf829.2398sldjfl.2983sodfjlk298dkjhg8";
     subject = require("../../../../../../src/server/controllers/userController/createTokenPair");
   },
-  "": async () => {
+  "Should create an accessToken/refreshToken pair": async () => {
     const createdUser = td.object({
       _id: mockUser._id,
       save: () => { },
